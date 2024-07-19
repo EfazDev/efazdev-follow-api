@@ -1,0 +1,1 @@
+git add * && echo "added files" && git commit -m "commit" -a && echo "made commit" && git push && echo "pushed to github!"
