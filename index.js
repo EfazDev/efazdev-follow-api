@@ -3,10 +3,13 @@ const cors = require("cors");
 const uuid = require("uuid");
 const body_parser = require("body-parser");
 const cookieParser = require('cookie-parser');
+const fetch = require("node-fetch");
 
 const MainAuthorizationKey = process.env.APPROVED_AUTHORIZATION_KEY;
 const port = process.env.PORT || 443;
 const app = express();
+
+var versionNumber = "1.0"
 
 function errorHappened(req, err) {
     console.log(`Request #${req.efazdev_api_key} had an error: ${err.message}`)
